@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"Sprite3",
   "bboxMode":0,
-  "bbox_bottom":62,
+  "bbox_bottom":63,
   "bbox_left":19,
   "bbox_right":43,
   "bbox_top":0,
@@ -19,7 +19,7 @@
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"76d66656-ce6f-4c19-9a0b-4bb1c01e2081","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"76d66656-ce6f-4c19-9a0b-4bb1c01e2081","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e3f5f540-e9ef-415d-b396-658e812cf541","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"e3f5f540-e9ef-415d-b396-658e812cf541","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"3e9e9199-95e6-47ca-9eaf-3caf973a06cd","blendMode":0,"displayName":"default","isLocked":false,"name":"3e9e9199-95e6-47ca-9eaf-3caf973a06cd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Sprite3",
