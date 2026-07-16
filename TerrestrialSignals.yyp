@@ -40,7 +40,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Spr_floor_temp","path":"sprites/Spr_floor_temp/Spr_floor_temp.yy",},},
     {"id":{"name":"Spr_player_idle","path":"sprites/Spr_player_idle/Spr_player_idle.yy",},},
-    {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
+    {"id":{"name":"Sprite_Kate_front","path":"sprites/Sprite_Kate_front/Sprite_Kate_front.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
