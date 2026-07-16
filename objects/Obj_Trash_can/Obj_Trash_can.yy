@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"Obj_Trash_can",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"Obj_Trash_can",
   "overriddenProperties":[],
@@ -28,7 +26,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"Spr_Trash_can",
     "path":"sprites/Spr_Trash_can/Spr_Trash_can.yy",

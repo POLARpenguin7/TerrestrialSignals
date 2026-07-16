@@ -45,6 +45,7 @@
     {"id":{"name":"Spr_player_walk","path":"sprites/Spr_player_walk/Spr_player_walk.yy",},},
     {"id":{"name":"Spr_Trash_can","path":"sprites/Spr_Trash_can/Spr_Trash_can.yy",},},
     {"id":{"name":"Sprite_Kate_front","path":"sprites/Sprite_Kate_front/Sprite_Kate_front.yy",},},
+    {"id":{"name":"Sprite_Kate_walk","path":"sprites/Sprite_Kate_walk/Sprite_Kate_walk.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
