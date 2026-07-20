@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":6.218209,
   "name":"coin_grab",
   "parent":{
     "name":"Sounds",
