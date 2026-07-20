@@ -19,8 +19,9 @@
   "height":64,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"af681d8c-084e-4683-931f-78d94d418ae9","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"af681d8c-084e-4683-931f-78d94d418ae9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"58f96932-6880-4a7b-a08d-c5c3900861ee","blendMode":0,"displayName":"Layer 3","isLocked":false,"name":"58f96932-6880-4a7b-a08d-c5c3900861ee","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"dd99da59-2a81-42a8-ba5a-515e43c2cee4","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"dd99da59-2a81-42a8-ba5a-515e43c2cee4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"4f08afa6-72fd-4779-b022-3c1bdaffb354","blendMode":0,"displayName":"default","isLocked":false,"name":"4f08afa6-72fd-4779-b022-3c1bdaffb354","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Sprite_Kate_walk",
   "nineSlice":null,
