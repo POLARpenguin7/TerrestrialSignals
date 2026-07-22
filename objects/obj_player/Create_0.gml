@@ -1,12 +1,6 @@
-/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 5AE5BA56
-/// @DnDArgument : "var" "p_sys"
-global.p_sys = 0;
-
-/// @DnDAction : YoYo Games.Particles.Part_Syst_Create
-/// @DnDVersion : 1.2
-/// @DnDHash : 4C2229F2
-/// @DnDArgument : "var" "global.p_sys"
-/// @DnDArgument : "persist" "1"
-global.p_sys = part_system_create_layer("Instances", 1);
+/// @DnDHash : 1A9A78F0
+/// @DnDArgument : "expr" "layer_tilemap_get_id("Tiles_1")"
+/// @DnDArgument : "var" "collision_tilemap"
+collision_tilemap = layer_tilemap_get_id("Tiles_1");

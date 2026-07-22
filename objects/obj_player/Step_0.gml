@@ -33,9 +33,8 @@ show_debug_message(string(move_x));
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "2"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "object" "Obj_floor_temp"
-/// @DnDSaveInfo : "object" "Obj_floor_temp"
-var l74ED03B5_0 = instance_place(x + 0, y + 2, [Obj_floor_temp]);if ((l74ED03B5_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDArgument : "object" "collision_tilemap"
+var l74ED03B5_0 = instance_place(x + 0, y + 2, [collision_tilemap]);if ((l74ED03B5_0 > 0)){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 7FFA470C
 	/// @DnDComment : reset the falling speed $(13_10)on movement y $(13_10)when you landed on ground
@@ -87,4 +86,4 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDArgument : "maxymove" "jump_speed"
 /// @DnDArgument : "object" "Obj_floor_temp"
 /// @DnDSaveInfo : "object" "Obj_floor_temp"
-move_and_collide(move_x, move_y, Obj_floor_temp,4,0,0,walk_speed,jump_speed);
+move_and_collide(move_x, move_y, [Obj_floor_temp],4,0,0,walk_speed,jump_speed);
