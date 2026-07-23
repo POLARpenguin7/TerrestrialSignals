@@ -1,12 +1,5 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 52118C96
-/// @DnDArgument : "expr" "x+move_x"
-/// @DnDArgument : "var" "x"
-x = x+move_x;
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
 /// @DnDHash : 0B3653FD
 /// @DnDComment : original. (no mamepad support)$(13_10)$(13_10)1 would be pressing right $(13_10)-1 would be pressing left $(13_10)0 would be no input.
 /// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check(vk_left)"
@@ -84,6 +77,5 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDArgument : "yvel" "move_y"
 /// @DnDArgument : "maxxmove" "walk_speed"
 /// @DnDArgument : "maxymove" "jump_speed"
-/// @DnDArgument : "object" "Obj_floor_temp"
-/// @DnDSaveInfo : "object" "Obj_floor_temp"
-move_and_collide(move_x, move_y, [Obj_floor_temp],4,0,0,walk_speed,jump_speed);
+/// @DnDArgument : "object" "collision_tilemap"
+move_and_collide(move_x, move_y, [collision_tilemap],4,0,0,walk_speed,jump_speed);
