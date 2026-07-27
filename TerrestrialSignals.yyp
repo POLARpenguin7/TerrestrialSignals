@@ -38,6 +38,7 @@
   },
   "name":"TerrestrialSignals",
   "resources":[
+    {"id":{"name":"Font_open_sans","path":"fonts/Font_open_sans/Font_open_sans.yy",},},
     {"id":{"name":"burrrrr_obj","path":"objects/burrrrr_obj/burrrrr_obj.yy",},},
     {"id":{"name":"BUTTON","path":"objects/BUTTON/BUTTON.yy",},},
     {"id":{"name":"Crown_obj","path":"objects/Crown_obj/Crown_obj.yy",},},
