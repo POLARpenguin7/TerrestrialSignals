@@ -14,6 +14,13 @@ collision_tilemap = layer_tilemap_get_id("Tiles_1");
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
+/// @DnDHash : 3233FA19
+/// @DnDArgument : "expr" "layer_tilemap_get_id("Tiles_death")"
+/// @DnDArgument : "var" "collision_tilemap_death"
+collision_tilemap_death = layer_tilemap_get_id("Tiles_death");
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
 /// @DnDHash : 3430D6EB
 /// @DnDArgument : "expr" "false"
 /// @DnDArgument : "var" "jumpPower"

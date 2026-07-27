@@ -75,10 +75,9 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDHash : 29FA1314
 /// @DnDComment : if we are on the ground
 /// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y" "2"
 /// @DnDArgument : "y_relative" "1"
 /// @DnDArgument : "object" "collision_tilemap_death"
-var l29FA1314_0 = instance_place(x + 0, y + 2, [collision_tilemap_death]);if ((l29FA1314_0 > 0)){	/// @DnDAction : YoYo Games.Rooms.Restart_Room
+var l29FA1314_0 = instance_place(x + 0, y + 0, [collision_tilemap_death]);if ((l29FA1314_0 > 0)){	/// @DnDAction : YoYo Games.Rooms.Restart_Room
 	/// @DnDVersion : 1
 	/// @DnDHash : 752DD2F2
 	/// @DnDParent : 29FA1314
