@@ -1,7 +1,7 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 0B3653FD
-/// @DnDComment : original. (no mamepad support)$(13_10)$(13_10)1 would be pressing right $(13_10)-1 would be pressing left $(13_10)0 would be no input.
+/// @DnDComment : original. (no gamepad support)$(13_10)$(13_10)1 would be pressing right $(13_10)-1 would be pressing left $(13_10)0 would be no input.
 /// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check(vk_left)"
 /// @DnDArgument : "var" "move_x"
 move_x = keyboard_check(vk_right) - keyboard_check(vk_left);
