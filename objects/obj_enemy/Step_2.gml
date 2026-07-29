@@ -137,7 +137,7 @@ var l70034FBC_0 = instance_place(x + 0, y + 2, [collision_tilemap]);if ((l70034
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 6D213269
+/// @DnDDisabled : 1
 /// @DnDParent : 3759DEE8
 /// @DnDArgument : "expr" "30"
 /// @DnDArgument : "var" "jump_speed"
-jump_speed = 30;
