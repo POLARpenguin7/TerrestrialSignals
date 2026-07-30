@@ -1,14 +1,40 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 0B3653FD
-/// @DnDComment : original. (no gamepad support)$(13_10)$(13_10)1 would be pressing right $(13_10)-1 would be pressing left $(13_10)0 would be no input.
+/// @DnDComment : old code, commented out. $(13_10)1 would be pressing left $(13_10)-1 would be pressing right $(13_10)0 would be no imput
+/// @DnDDisabled : 1
 /// @DnDArgument : "expr" "keyboard_check(vk_right) - keyboard_check(vk_left)"
 /// @DnDArgument : "var" "move_x"
-move_x = keyboard_check(vk_right) - keyboard_check(vk_left);
+
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 42F4DA9C
+/// @DnDComment : key left OR $(13_10)dpad left OR $(13_10)left joystick left 
+/// @DnDArgument : "expr" "keyboard_check(vk_left)||gamepad_button_check(0,gp_padl)||(gamepad_axis_value(0,gp_axislh) < -0.2)"
+/// @DnDArgument : "var" "controls_input_left"
+controls_input_left = keyboard_check(vk_left)||gamepad_button_check(0,gp_padl)||(gamepad_axis_value(0,gp_axislh) < -0.2);
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 45E69855
+/// @DnDComment : key right OR $(13_10)dpad right OR $(13_10)left joystik right 
+/// @DnDArgument : "expr" "keyboard_check(vk_right)||gamepad_button_check(0,gp_padr)||(gamepad_axis_value(0,gp_axislh) > 0.2)"
+/// @DnDArgument : "var" "controls_input_right"
+controls_input_right = keyboard_check(vk_right)||gamepad_button_check(0,gp_padr)||(gamepad_axis_value(0,gp_axislh) > 0.2);
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 101D06CD
+/// @DnDComment : set move-x to the subtraction of $(13_10)right input from left input 
+/// @DnDArgument : "expr" "controls_input_right - controls_input_left"
+/// @DnDArgument : "var" "move_x"
+move_x = controls_input_right - controls_input_left;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 35132AB2
+/// @DnDComment : multiply move_x for higher speed from walk_speed 
 /// @DnDArgument : "expr" "move_x * walk_speed"
 /// @DnDArgument : "var" "move_x"
 move_x = move_x * walk_speed;
@@ -16,6 +42,7 @@ move_x = move_x * walk_speed;
 /// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
 /// @DnDVersion : 1
 /// @DnDHash : 66DB7D38
+/// @DnDComment : debug for testing
 /// @DnDArgument : "msg" "move_x"
 show_debug_message(string(move_x));
 
@@ -44,6 +71,40 @@ var l74ED03B5_0 = instance_place(x + 0, y + 2, [collision_tilemap]);if ((l74ED0
 		/// @DnDHash : 21C97E54
 		/// @DnDComment : Jump!
 		/// @DnDParent : 0C7DC181
+		/// @DnDArgument : "expr" "-jump_speed"
+		/// @DnDArgument : "var" "move_y"
+		move_y = -jump_speed;}
+
+	/// @DnDAction : YoYo Games.Gamepad.If_Gamepad_Button_Pressed
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 6C021AB0
+	/// @DnDParent : 74ED03B5
+	/// @DnDArgument : "btn" "gp_face1"
+	var l6C021AB0_0 = 0;var l6C021AB0_1 = gp_face1;if(gamepad_is_connected(l6C021AB0_0) && gamepad_button_check_pressed(l6C021AB0_0, l6C021AB0_1)){	/// @DnDAction : YoYo Games.Common.Function_Call
+		/// @DnDVersion : 1
+		/// @DnDHash : 07D29581
+		/// @DnDComment : arg 1 is device id$(13_10)arg 2 is left motor $(13_10)arg 3 is right motor 
+		/// @DnDInput : 3
+		/// @DnDParent : 6C021AB0
+		/// @DnDArgument : "function" "gamepad_set_vibration"
+		/// @DnDArgument : "arg" "0"
+		/// @DnDArgument : "arg_1" "0.7"
+		/// @DnDArgument : "arg_2" "0.7"
+		gamepad_set_vibration(0, 0.7, 0.7);
+	
+		/// @DnDAction : YoYo Games.Instances.Set_Alarm
+		/// @DnDVersion : 1
+		/// @DnDHash : 406E30FF
+		/// @DnDComment : start ticking on alarm $(13_10)to reset the rumble to turn off $(13_10)after the countdown deleay
+		/// @DnDParent : 6C021AB0
+		/// @DnDArgument : "steps" "15"
+		alarm_set(0, 15);
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 4ABB940A
+		/// @DnDComment : jump
+		/// @DnDParent : 6C021AB0
 		/// @DnDArgument : "expr" "-jump_speed"
 		/// @DnDArgument : "var" "move_y"
 		move_y = -jump_speed;}}
