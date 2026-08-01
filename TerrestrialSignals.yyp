@@ -46,6 +46,7 @@
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_rain_drop","path":"objects/obj_rain_drop/obj_rain_drop.yy",},},
+    {"id":{"name":"obj_speedrun_timer","path":"objects/obj_speedrun_timer/obj_speedrun_timer.yy",},},
     {"id":{"name":"Obj_Trash_can","path":"objects/Obj_Trash_can/Obj_Trash_can.yy",},},
     {"id":{"name":"win_obj","path":"objects/win_obj/win_obj.yy",},},
     {"id":{"name":"ParticleSystem1","path":"particles/ParticleSystem1/ParticleSystem1.yy",},},
