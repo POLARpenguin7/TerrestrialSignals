@@ -25,3 +25,9 @@ collision_tilemap_death = layer_tilemap_get_id("Tiles_death");
 /// @DnDArgument : "expr" "false"
 /// @DnDArgument : "var" "jumpPower"
 jumpPower = false;
+
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 45C0BF68
+/// @DnDArgument : "var" "global.coins"
+global.coins = 0;

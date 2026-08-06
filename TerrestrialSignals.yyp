@@ -43,6 +43,7 @@
     {"id":{"name":"BUTTON","path":"objects/BUTTON/BUTTON.yy",},},
     {"id":{"name":"Crown_obj","path":"objects/Crown_obj/Crown_obj.yy",},},
     {"id":{"name":"fire_1_obj","path":"objects/fire_1_obj/fire_1_obj.yy",},},
+    {"id":{"name":"Obj_counter","path":"objects/Obj_counter/Obj_counter.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_rain_drop","path":"objects/obj_rain_drop/obj_rain_drop.yy",},},

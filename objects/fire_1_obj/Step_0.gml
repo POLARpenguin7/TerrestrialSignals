@@ -9,6 +9,6 @@ x += move_x;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 6752C9D6
-/// @DnDArgument : "expr" "x=x+move_x"
+/// @DnDArgument : "expr" "obj_player.walk_speed"
 /// @DnDArgument : "var" "move_x"
-move_x = x=x+move_x;
+move_x = obj_player.walk_speed;
